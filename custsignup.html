@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Customer Registration</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link href="public/css/main.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/custsignup" method="post">
+                <h1>Customer Registration</h1>
+                <br>
+                <h2>Create an iService Account</h2>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_country" class="form-label">Country of residence*</label>
+                        <select class="form-select" id="input_country" aria-label="Default select example" name="country">
+                            <option selected>Choose from list</option>
+                            <option value="America">America</option>
+                            <option value="Australia">Australia</option>
+                            <option value="China">China</option>
+                            <option value="England">England</option>
+                            <option value="France">France</option>
+                            <option value="Russia">Russia</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_fname" class="form-label">First name*</label>
+                        <input type="text" class="form-control" id="input_fname" name="first_name">
+                    </div>
+                    <div class="col">
+                        <label for="input_lname" class="form-label">Last name*</label>
+                        <input type="text" class="form-control" id="input_lname" name="last_name">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_email" class="form-label">Email*</label>
+                        <input type="text" class="form-control" id="input_email" name="email">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_password" class="form-label">Password*</label>
+                        <input type="password" class="form-control" id="input_password" name="password">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_confirm" class="form-label">Confirm password*</label>
+                        <input type="password" class="form-control" id="input_confirm" name="confirm_password">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_address" class="form-label">Address*</label>
+                        <textarea class="form-control" id="input_address" rows="3" name="address"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_city" class="form-label">City*</label>
+                        <input type="text" class="form-control" id="input_city" name="city">
+                    </div>
+                    <div class="col">
+                        <label for="input_state" class="form-label">State, Province or Region*</label>
+                        <input type="text" class="form-control" id="input_state" name="state">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_code" class="form-label">ZIP / Postal code</label>
+                        <input type="text" class="form-control" id="input_code" name="ZIP_code">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="input_phone" class="form-label">Mobile phone number </label>
+                        <input type="text" class="form-control" id="input_phone" name="phone_number">
+                    </div>
+                </div>
+                <br> 
+                <div class="button">
+                    <button type="submit" class="btn btn-success">Create Account</button>
+                </div>
+            </form>   
+        </div>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
